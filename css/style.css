@@ -1,0 +1,65 @@
+#sidebar {
+  min-height: 100vh;
+  margin-left: -300px;
+  background: #faffc1;
+  min-width: 250px !important;
+  max-width: 300px !important;
+  transition: all 0.5s ease;
+}
+#content {
+  min-width: 100vw;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#page.toggled #sidebar {
+  margin-left: 0;
+}
+.card1 {
+  background: #f0f9ff;
+}
+.card2 {
+  background: #fef6fb;
+}
+.card3 {
+  background: #fefbec;
+}
+.card4 {
+  background: linear-gradient(110.42deg, #00c1fe 18.27%, #faffc1 91.84%);
+}
+.my-table {
+  background-color: #fff;
+}
+.my-table1:nth-child(odd) {
+  background-color: #fff;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+  border: none;
+}
+.tables{
+  overflow-x: auto !important;
+}
+@media (min-width: 768px) {
+  #sidebar {
+    margin-left: 0;
+  }
+  #content {
+    min-width: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  #page.toggled #sidebar {
+    margin-left: -300px;
+  }
+}
+@media (max-width: 480px) {
+  .my-nav{
+    flex-direction: column;
+  }
+}
