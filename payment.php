@@ -50,6 +50,7 @@
         <table class="table table-responsive table-borderless">
           <thead class="text-secondary fw-lighter">
             <tr>
+<<<<<<< HEAD
               <th scope="row"></th>
               <th scope="col">Name</th>
               <th scope="col" style="white-space: nowrap !important;">Payment Schedule</th>
@@ -57,12 +58,21 @@
               <th scope="col" style="white-space: nowrap !important;">Amount Paid</th>
               <th scope="col" style="white-space: nowrap !important;">Balance amount</th>
               <th scope="col">Date</th>
+=======
+              <th></th>
+              <th>Name</th>
+              <th style="white-space: nowrap !important;">Payment Schedule</th>
+              <th style="white-space: nowrap !important;">Bill Number</th>
+              <th style="white-space: nowrap !important;">Amount Paid</th>
+              <th style="white-space: nowrap !important;">Balance amount</th>
+              <th>Date</th>
+>>>>>>> fb50e17fcfd8f56006d36127ba2e64858f720b16
             </tr>
           </thead>
           <tbody>
             <?php foreach($payment as $payments) { ?>
             <tr class="my-table1 mx-4">
-              <th scope="row"></th>
+              <th></th>
               <th class="py-3 fw-normal"><?php echo $payments['name']; ?></th>
               <td class="p-3"><?php echo $payments['payment_schedule']; ?></td>
               <td class="py-3"><?php echo $payments['bill_number']; ?></td>
@@ -80,10 +90,10 @@
 
   <script src="./js/bootstrap.js"></script>
   <script>
-  var el = document.getElementById("page");
+  var element = document.getElementById("page");
   var toggleButton = document.getElementById("menu-toggle");
   toggleButton.onclick = function() {
-    el.classList.toggle("toggled");
+    element.classList.toggle("toggled");
   };
   </script>
 </body>
