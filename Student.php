@@ -54,8 +54,8 @@
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Phone</th>
-              <th scope="col">Enroll Number</th>
-              <th scope="col">Date Of Admission</th>
+              <th scope="col" style="white-space: nowrap !important;">Enroll Number</th>
+              <th scope="col" style="white-space: nowrap !important;">Date Of Admission</th>
             </tr>
           </thead>
           <tbody>
@@ -66,15 +66,14 @@
               </th>
               <td class="pt-4"><?php echo $student ['name']; ?></td>
               <td class="pt-4"><?php echo $student ['email']; ?></td>
+              <td class="pt-4"><?php echo $student ['phone']; ?></td>
               <td class="pt-4"><?php echo $student ['enroll_number']; ?></td>
-              <td class="pt-4"><?php echo $student ['date_of_admession']; ?></td>
-              <td class="pt-4">08-Dec, 2021</td>
+              <td class="pt-4" style="white-space: nowrap !important;"><?php echo $student ['date_of_admession']; ?></td>
               <td class="pt-4"><img src="./images/pen.svg" alt="pen" /></td>
               <td class="pt-4">
                 <img src="./images/trash.svg" alt="trash" />
               </td>
             </tr>
-
             <?php } ?>
 
           </tbody>
